@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Forms</title>
+</head>
+<body>
+
+    <nav>
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JS</div>
+        <div>Python</div>
+    </nav>
+   <form>
+       <fieldset>
+           <legend>Basic Info</legend>
+            <div >
+                <label for="full-name">Enter your name: </label>
+            <input id="full-name" type="text" placeholder="Full Name" name="full-name" required oninvalid="">
+            </div>
+            <br>
+            <div>
+                <label for="email">Email: </label>
+                <input id="email" type="email" name="email-id" placeholder="Email-ID">
+            </div>
+            <br>
+            <div>
+                <label for="pwd">Password: </label>
+            <input id="pwd" type="password" minlength="5" maxlength="10" name="password" placeholder="password" pattern="/[A-Z][a-z]*[0-9]/">
+            </div>
+            <br>
+
+            <div>
+                <label>Gender: </label>
+                <input name="a"  type="radio" value="male">Male
+                <input name="a" type="radio" value="female">Female
+                <input name="a" type="radio" value="other">Other
+            </div>
+
+       </fieldset>
+       <br>
+        <fieldset>
+           <legend>Some Extra Info</legend>
+            <div>
+                <label>Hobbies: </label>
+                <input name="hobbies" type="checkbox" value="cycling">Cycling
+                <input name="hobbies" type="checkbox" value="reading" disabled checked>Reading
+                <input name="hobbies" type="checkbox" value="trekking">Trekking
+            </div>
+    
+           <div>
+            <input type="color" >
+           </div>
+    
+            <div>
+                <input type="date">
+            </div>
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Submit Form">
+        </div>
+
+        <div>
+            <input type="file" size="10" accept=".png,.doc" name="file">
+        </div>
+
+        <div>
+            <label for="ta">Enter some text:</label>
+            <textarea id="ta" cols="50" rows="10" placeholder="Type your feedback..."></textarea>
+        </div>
+
+        <div>
+            <input type="number" hidden>
+        </div>
+
+        <!-- Dropdowns -->
+
+        <label for="state">Pick a State: </label>
+        <select id="state" name="state" required >
+            <option value="" selected >Select a state</option>
+            <option value="UP">Uttar Pradesh</option>
+            <option value="MP">Madhya Pradesh</option>
+            <option value="MH">Maharashtra</option>
+        </select>
+
+        <audio controls loop>
+            <source src="https://file-examples.com/storage/fee1f9943d631e44594638d/2017/11/file_example_MP3_1MG.mp3">
+            This audio is not loading...
+        </audio>
+        <br>
+
+        <video controls width="500px"  height="500px" muted loop>
+            <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4">
+            This video is not loading...
+        </video>
+
+
+        <address>14, Street, Brookefield, Bengaluru</address>
+
+        <iframe src="https://www.wikipedia.org/" width="1000px" height="1000px"></iframe>
+   </form>
+
+    <!-- <input id="full-name" type="text" /> -->
+</body>
+</html>
+
+
+
+<!-- CSS -->
+<!-- Cascading Style Sheets -->

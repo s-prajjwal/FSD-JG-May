@@ -1,0 +1,26 @@
+/* selector: class*/
+.p-second-subheading {
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.p-first-subheading {
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 25px;
+    background-color: lightgrey;
+    border: 1px solid red;
+}
+
+.odd-ele {
+    margin-left: 20px;
+}
+
+.even-ele {
+    margin-right: 20px;
+}
+
+
+.even-ele::after {
+    content: 'after content';
+}

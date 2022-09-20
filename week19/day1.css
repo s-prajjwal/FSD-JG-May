@@ -1,0 +1,42 @@
+/* .h2{
+    border: 2px solid green;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-color: green;
+} */
+
+/* Multi element selector - , */
+.h2, code, input, input[type="text"], #id1 {
+    border: 2px solid green;
+}
+
+pre {
+    border: inherit;
+}
+
+/* Attribute selectors*/
+ol[type] {
+    background-color: aqua;
+    font-size: 20px;
+}
+
+ol[type='i'] {
+    color: brown;
+}
+
+input[type="email"] {
+    width: 200px;
+    border-color: red;
+    border-radius: 4px;
+}
+
+input[type="text"][required][size="4"], input[type][placeholder] {
+    width: 800px;
+    border-radius: 16px;
+    border: 2px solid green;
+}
+
+input[disabled] {
+    background-color: darkgray;
+}

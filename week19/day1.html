@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./day1.css" rel="stylesheet"/>
+    <title>Week 19 Day 1</title>
+</head>
+<body>
+    <h2 class="h2">This is heading</h2>
+    <div class="first-div">Lorem Ipsum is simply <i><a href ="www.amazon.com">dummy text</a></i> of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the <div style="font-weight: bold;">1500s</div>, when an unknown printer took a <span style="color: black">galley of type</span> and scrambled it to make a type specimen book.<br> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+        <h2 class="red-text"> This is H2 Tag</H2>
+
+            <code>
+                <pre>
+                    function countWays(n, dp) {
+                        if (n == 1 || n == 2) return n;
+                      
+                        if (dp[n]) return dp[n];
+                      
+                        dp[n] = countWays(n - 1, dp) + countWays(n - 2, dp);
+                        return dp[n];
+                    }
+                </pre>
+            </code>
+            <pre class="red-text">It is a long established fact that a
+                reader will be distracted by the readable content of a page when looking at its layout. 
+                The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                 as opposed to using 'Content here, content here', making it look like readable English. 
+                 Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, 
+                 and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+                 Various versions have evolved over the years, 
+                 <a href="https://www.google.com">sometimes by accident, sometimes on purpose (injected humour and the like)</a>.</pre>
+        
+        <span>Fruits List</span>
+        <span>Fruits List 2</span>
+
+        <ol type="i">
+            <li><a href="https://www.apple.com/in/">Apple</a></li>
+            <li>Banana</li>
+            <li>Mango</li>
+            <li>Orange</li>
+        </ol>
+
+        <ol type="a">
+            <li><a href="https://www.apple.com/in/">Apple</a></li>
+            <li>Banana</li>
+            <li>Mango</li>
+            <li>Orange</li>
+        </ol>
+
+        <div >
+            <label for="first-name">Enter your First name: </label>
+        <input id="first-name" type="text" placeholder="First Name" name="first-name" required size="4">
+        </div>
+        <div >
+            <label for="last-name">Enter your Last name: </label>
+        <input id="last-name" type="text" placeholder="Last Name" required disabled>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email: </label>
+            <input id="email" type="email" name="email-id" disabled>
+        </div>
+        <br>
+        <div>
+            <label for="pwd">Password: </label>
+        <input id="pwd" type="password" minlength="5" maxlength="10" name="password" placeholder="password" pattern="/[A-Z][a-z]*[0-9]/">
+        </div>
+
+        <div>
+            <label>Hobbies: </label>
+            <input name="hobbies" type="checkbox" value="cycling">Cycling
+            <input name="hobbies" type="checkbox" value="reading" disabled checked>Reading
+            <input name="hobbies" type="checkbox" value="trekking">Trekking
+        </div>
+</body>
+</html>
