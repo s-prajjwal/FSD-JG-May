@@ -40,6 +40,73 @@
     left: 100px;
 }
 
+
+.box-8 {
+    position: sticky;
+    top: 0;
+}
+
+section .box {
+    border: 5px solid orange !important;
+}
+
+section > div {
+    padding: 10px;
+    border: 5px solid red;
+    border-radius: 8px;
+
+}
+
+section > div > p {
+    /* styles */
+}
+
+
+#box-14 + p{
+    font-size: 48px;
+}
+
+#box-14 ~ .box,p {
+    font-size: 30px;
+    color: yellowgreen;
+}
+
+.box:hover{
+    background-color: blueviolet;
+}
+
+/* Visited Links*/
+a:visited {
+    color: green;
+}
+
+/* Unvisited Links*/
+a{
+    color: red;
+}
+
+p::first-line {
+    color: blue;
+}
+
+p::first-letter {
+    font-size: 60px;
+}
+
+p::before {
+    content: url("https://picsum.photos/id/118/1500/1000");
+    background-size: 40px;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+
+}
+
+h2::before {
+    content: url('image');
+}
+
+
 /*
 postion: 1. static - default - normal document flow
          2. relative
