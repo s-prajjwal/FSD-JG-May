@@ -1,0 +1,13 @@
+#first-section div p {
+    color: red;;
+}
+
+
+/* section > p {
+    font-size: 18px;
+} */
+
+
+#first-section  #id > .class1 {
+    font-size: 18px;
+}
