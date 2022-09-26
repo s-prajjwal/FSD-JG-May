@@ -11,3 +11,49 @@
 #first-section  #id > .class1 {
     font-size: 18px;
 }
+
+p ~ span {
+    font-size: 48px;
+}
+
+p::after{
+    content: url("./smiley.gif");
+    /* content: 'Hello'; */
+}
+
+p::first-letter {
+    font-size: 30px;
+    color: black;
+}
+
+p::first-line {
+    color: blue;
+}
+
+
+li::marker {
+    color: red;
+}
+
+
+#box {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    /* transition-property: all;
+    transition-duration: 3s;
+    transition-delay: 1s; */
+    transition: all 3s 1s;
+}
+
+#box:hover{
+    background-color: green;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+input:focus {
+    border: 2px solid green !important;
+    height: 100px;
+}
