@@ -35,25 +35,51 @@ li::marker {
     color: red;
 }
 
+/* 
+# -id
+. - class
+tagname
+*/
 
 #box {
     height: 100px;
     width: 100px;
     border: 1px solid black;
     /* transition-property: all;
-    transition-duration: 3s;
-    transition-delay: 1s; */
-    transition: all 3s 1s;
+    transition-duration: 3s default - 0;
+    tansition-function: linear, ease-in, ease-out and ease-in-out, cubic bezzier
+    transition-delay: 1s;  default - 0*/
+    /* transition: width 4s ease-in 0.5s, background-color 5s ease-in-out; */
+
+
+    transition: transform 3s ease-in 0.5s;
+
+    transform: scale(1.1);
+
+    /* transform: rotate(-45deg);
+    transform: scale(0.3, 1.5); 
+    transform: skewY(45deg); */
+
 }
 
-#box:hover{
+ #box:hover{
     background-color: green;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
+    /* width: 500px; */
+    transform: translate(200px, 100px) rotate(-45deg) scale(1.5);
+    /* height: 500px;
+    border-radius: 50%; */
+} 
+
+#box:hover h1, #box:hover p {
+    font-size: 16px;;
 }
 
 input:focus {
     border: 2px solid green !important;
     height: 100px;
+}
+
+
+#first-section {
+    transition: all 3s;
 }
