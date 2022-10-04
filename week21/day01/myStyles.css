@@ -1,0 +1,8 @@
+.custom-primary {
+    background-color: violet;
+    font-size: 2rem;
+}
+
+.card-parent {
+    display: flex;
+}

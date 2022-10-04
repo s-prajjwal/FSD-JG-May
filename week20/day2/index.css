@@ -1,0 +1,74 @@
+.flex-container {
+    display: flex;
+    /* height: 1000px; */
+    background-color: aqua;
+    /* width: 80vw; */
+    /* flex-flow: column wrap ; */
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    overflow: hidden;
+    height: 500px;
+    /* justify-content: works on main axis */
+    /* justify-content: flex-end; */
+    /* align-items: works on cross axis */
+    align-items: center; 
+    /* align-content: center; */
+}
+
+.flex-item {
+    height: 100px;
+    /* width: 100px; */
+    border: 1px solid black;
+    margin: 5px;
+    background-color: red;
+    text-align: center;
+    line-height: 100px;
+    /* flex-basis: 300px; */
+    width: 300px;
+    /* flex-basis: 200px; */
+}
+
+.item-1 {
+    background-color: green;
+    color: white;
+    /* width: 120px; */
+    /* height: 150px; */
+    line-height: 200px;
+    /* order: 1; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 5; */
+    /* flex-basis: 200px; */
+    flex: 1 5 200px;
+}
+
+.item-2 {
+    background-color: black;
+    color: white;
+    /* height: 70px; */
+    line-height: 70px;
+    /* order: 3; */
+    /* flex-grow: 1; */
+    /* flex-basis: 300px; */
+    /* flex-shrink: 1; */
+    flex: 1 1 300px;
+    align-self: flex-end;
+
+}
+
+.item-3 {
+    /* flex-grow: 1; */
+    /* flex-shrink: 3; */
+    /* flex-basis: 150px; */
+    flex: 1 3 150px;
+    align-self: flex-start;
+}
+
+.item-5 {
+    background-color: yellow;
+    color: blue;
+    /* height: 130px; */
+    line-height: 130px;
+    order: 2
+}
+
+
