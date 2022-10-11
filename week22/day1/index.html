@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./index.css" rel="stylesheet"/>
+    <title>Document</title>
+</head>
+<body>
+    <div id="simpleForm">
+        <label>Some input field</label>
+        <input type="text" id="textField">
+    </div>
+    <section id="mySection">
+        <div id="buttonsWrapper" class="myDivs">
+            <button id="myButton">Click Here</button>
+            <button id="second">Submit </button>
+            <div class="myDivs"></div>
+        </div>
+        <div class="myDivs">This will not be included in event bubbling for submit button</div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
