@@ -13,7 +13,8 @@ const btn = document.getElementById("second");
 function onSubmit(event) {
   console.log("The button was clicked.");
   alert("Hello from the submit button!, event listener 2");
-  event.stopImmediatePropagation();
+  // event.stopImmediatePropagation();
+  event.stopPropagation();
   // hide the label
 
   // document.getElementsByTagName("label")[0].style.visibility = "hidden";
@@ -53,14 +54,17 @@ document
 
 // Submit button events
 
+// Click 1
 document.getElementById("second").addEventListener("click", function (event) {
   console.log(event);
   alert("This is submit button!");
-  event.stopPropagation(); // Exit the event right after this function
+  // event.stopPropagation(); // Exit the event right after this function
 });
 
+// Click 2
 document.getElementById("second").addEventListener("click", onSubmit);
 
+// Click 3
 document.getElementById("second").addEventListener("click", function () {
   alert("This is third click listener for submit button");
 });
@@ -81,4 +85,16 @@ let arr = [1, 2, 3];
 
 arr.map(function (a) {
   console.log(a);
+});
+
+// Prevent Default
+const myCheckbox = document.getElementById("myCheckbox");
+const myRadio = document.getElementById("myRadio");
+
+myCheckbox.addEventListener("click", function (event) {
+  // event.preventDefault();
+});
+
+myRadio.addEventListener("click", function (event) {
+  event.preventDefault();
 });

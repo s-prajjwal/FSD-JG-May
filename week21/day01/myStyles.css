@@ -6,3 +6,7 @@
 .card-parent {
     display: flex;
 }
+
+.box {
+    font-size: 8px;
+}
