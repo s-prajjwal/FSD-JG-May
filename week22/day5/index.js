@@ -7,21 +7,27 @@
 const btn = document.getElementById("tellMeJoke");
 btn.addEventListener("click", function () {
   // Make a fetch api call
+  // fetch - returns Pomise object
   const jokeObj = fetch("https://v2.jokeapi.dev/joke/Any");
   console.log(jokeObj);
 
   jokeObj
     .then((data) => {
+      // whatever you want to do in case of success
       return data.json();
     })
-    .then((data) => {
+    .then((dataJSON) => {
       // Displaying the joke on the screen
 
-      console.log(data);
-      document.getElementById("joke").innerHTML = data.joke || data.setup;
+      console.log(dataJSON);
+      document.getElementById("joke").innerHTML =
+        dataJSON.joke || dataJSON.setup + " - " + dataJSON.delivery;
     })
-    .catch((error) => {
-      console.log(error);
-      // Displaying the error on the screen
+    .catch(function (err) {
+      // whatever you want to do in case of failed state
+      console.log(err);
+      document.getElementById("joke").innerHTML = err;
     });
 });
+
+// Axios - JS Library for making API/XHR/Fetch calls
