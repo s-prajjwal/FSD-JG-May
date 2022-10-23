@@ -16,7 +16,7 @@ btn.addEventListener("click", function () {
       // whatever you want to do in case of success
       return data.json();
     })
-    .then((dataJSON) => {
+    .then((actualData) => {
       // Displaying the joke on the screen
 
       console.log(dataJSON);
